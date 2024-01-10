@@ -11,6 +11,7 @@ author:
         country: Wakanda
 abstract: |
   Lorem ipsum...
+bibliography: references.bib
 format:
   iccr-pdf:
     keep-tex: true
