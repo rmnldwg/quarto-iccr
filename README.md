@@ -1,24 +1,21 @@
-# Templates for submissions to the ICCR2024 conference
+# Quarto template for ICCR 2024
 
-Recommended templates for submissions to the XXth International Conference on the use of Computers in Radiation therapy.
+This template can be used to write an abstract for ICCR 2024 using [Quarto].
 
-iccr2024_template.pdf is a rendered preview generated from the latex template.
+> [!NOTE]
+> This is **NOT** an official template from the organizers of ICCR 2024. I have merely forked [their official repository](https://github.com/tbaudier/iccr2024_templates) and tried to make a quarto template from it.
 
-**Submission rules**
-- Submission only in pdf format
-- two column format
-- font size 11 for main text, abstract and references can use font size 9
-- Maximum 4 A4 pages including everything (strict limit)
-- In addition: prepare short abstract (max 150 words) to be entered in online submission system! This will only be used for the program. It will **not** be used for the review process **nor** for the final proceedings.
 
-## How to build the LaTex template
+[Quarto]: https://quarto.org
 
-You can manually build the latex template by executing
+
+## Using the Template
+
+To start writing an abstract with this template, use the following command
+
 ```
-pdflatex iccr2024_template.tex
-bibtex   iccr2024_template.aux
-pdflatex iccr2024_template.tex
-pdflatex iccr2024_template.tex
+quarto use rmnldwg/quaro-iccr
 ```
 
-Alternatively, simply run the build chain including pdflatex and bibtex of your favorite LaTex editor or use [latexmk](https://mg.readthedocs.io/latexmk.html).
+which will create a new project based off of this template.
+

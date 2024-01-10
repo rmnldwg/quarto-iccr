@@ -1,0 +1,34 @@
+---
+title: My Submission to ICCR 2024
+author:
+  - name: John Doe
+    email: john@doe.com
+    affiliations:
+      - name: Noname University
+        address: Somestreet 42
+        city: Metropolis
+        postal-code: 31416
+        country: Wakanda
+abstract: |
+  Lorem ipsum...
+format:
+  iccr-pdf:
+    keep-tex: true
+    include-in-header:
+      text: "% this should have no effect"
+  iccr-html: default
+---
+
+## Introduction
+
+Some random stuff here. For example @Pivot2023 mentions smething, and we have also seen some other evidence [@Saporta2022;@Robert2022].
+
+
+## Materials and Methods
+
+Some more random stuff there.
+
+
+## Results
+
+Super awesome of course!
