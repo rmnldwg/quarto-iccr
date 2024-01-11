@@ -8,10 +8,13 @@ contributes:
       format-resources:
         - iccr2024.sty
       include-in-header:
-        - preamble.tex
+        - text: "\\usepackage{iccr2024}"
+        - file: "_two-column-longtable.tex"
+      template: "simple.tex"
       template-partials:
         - "partials/doc-class.tex"
         - "partials/_affiliations.tex"
         - "partials/before-title.tex"
         - "partials/title.tex"
         - "partials/before-body.tex"
+      cite-method: biblatex
