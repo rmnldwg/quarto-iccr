@@ -1,35 +1,99 @@
 ---
-title: My Submission to ICCR 2024
+title: A LaTeX Template for a ICCR 2024 submission
 author:
-  - name: John Doe
-    email: john@doe.com
+  - name: First Author
     affiliations:
-      - name: Noname University
-        address: Somestreet 42
-        city: Metropolis
-        postal-code: 31416
-        country: Wakanda
+      - ref: 1
+  - name: Second Author
+    affiliations:
+      - ref: 1
+      - ref: 2
+  - name: Third Author
+    affiliations:
+      - ref: 2
+affiliations:
+  - id: 1
+    name: University of Radiation Oncology
+    departement: Departement of Radiotherapy
+    city: City
+    country: Country
+  - id: 2
+    name: University of Computer Science
+    departement: Departement of Radiology
+    city: City
+    country: Country
 abstract: |
-  Lorem ipsum...
+  Add your abstract here. This abstract can be slightly longer than the very short 150
+  words abstract that you have to enter in the submission system and that is used for
+  the program.
 bibliography: references.bib
 format:
   iccr-pdf:
     keep-tex: true
-    include-in-header:
-      text: "% this should have no effect"
   iccr-html: default
 ---
 
-## Introduction
+# Introduction
 
-Some random stuff here. For example @Pivot2023 mentions smething, and we have also seen some other evidence [@Saporta2022;@Robert2022].
+<!-- The stuff just below here are the submission rules. You can/should remove them. -->
+\textbf{\color{red}Submission rules}
+\begin{itemize}
+\color{red}
+\item submission only in pdf format
+\item two column format
+\item font size 11 for main text, abstract and references can use font size 9 (footnotesize in Latex)
+\item maximum 4 A4 pages including everything (strict limit)
+\item In addition: prepare short abstract (max 150 words) to be entered in the online submission system. 
+      This will only be used for the program. 
+      It will not be used for the review process nor for the final proceedings.
+\end{itemize}
+
+\lipsum[2-5]
 
 
-## Materials and Methods
+# Materials and Methods
 
-Some more random stuff there.
+This is how you add one [@Pivot2023] or multiple citations [@Saporta2022;@Robert2022].
+
+And this is a dummy equation
+$$
+I_\alpha = \int_0^\alpha f(x) dx
+$$ {#eq-dummy}
+
+![This is a dummy figure to be replaced.](fig1.pdf){#fig-dummy fig-env="figure*"}
+
+@fig-dummy shows how to include a figure.
+@tbl-dummy shows how to include a table.
+
+\bigskip
+\lipsum[2-7]
 
 
-## Results
+# Results
 
-Super awesome of course!
+## Simulation Results
+
+\lipsum[2-3]
+
+
+## Other Results
+
+\lipsum[2-3]
+
+| $\alpha$ | $\beta$ | $\gamma$ | $\delta$ |
+|----------|---------|----------|----------|
+| A        | 1       | a        | 3        |
+| B        | 2       | b        | 2        |
+| C        | 3       | c        | 1        |
+
+: This is a dummy table to be replaced. {#tbl-dummy}
+
+
+# Discussion
+
+\lipsum[2-9]
+
+
+# Conclusion
+
+\lipsum[2]
